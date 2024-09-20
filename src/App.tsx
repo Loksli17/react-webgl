@@ -2,6 +2,7 @@ import Button from './ui/Button';
 import Header from './ui/Header';
 
 
+
 function App() 
 {
     
@@ -10,15 +11,20 @@ function App()
         //todo call service
         console.log("create Shader");
     }
+
+    const removeShader: () => void = () =>
+    {
+        console.log('remove shader');
+    }
     
 
     return (
         
-        <div className="app py-10 grid gap-10">
+        <div className="app py-10 grid gap-14">
             
             <div className='px-10 w-full border-box'>
 
-                <Header content='Webgl2 react application'/>
+                <Header content='Webgl2 react app'/>
 
             </div>
 
@@ -39,7 +45,7 @@ function App()
                 />
 
                 <Button 
-                    className='px-4 py-4 bg-cyan-100 text-lg rounded-md' 
+                    className='px-4 py-4 bg-cyan-200 hover:bg-cyan-300 text-lg rounded-md' 
                     content='Hotkeys list'
                 />
             
