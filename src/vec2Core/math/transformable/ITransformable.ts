@@ -1,5 +1,5 @@
-import Matrix3x3             from "../matrix3x3/Matrix3x3";
-import { TransformableSize } from "./ITransformableSize";
+import Matrix3x3         from "../matrix3x3/Matrix3x3";
+import TransformableSize from "./ITransformableSize";
 
 
 
@@ -11,5 +11,4 @@ export default interface ITransformable
     getSize(): TransformableSize;
 
     getCopySize(): TransformableSize;
-
 }

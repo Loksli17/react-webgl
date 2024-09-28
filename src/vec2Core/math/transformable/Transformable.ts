@@ -1,9 +1,9 @@
-import { DTOEntity }         from "../../dto/DTOEntity";
-import BoundingBox           from "../BoundingBox";
-import Matrix3x3             from "../matrix3x3/Matrix3x3";
-import { ITransformableDTO } from "./ITransformableDto";
-import { TransformableSize } from "./ITransformableSize";
-import ITransformable        from "./ITransformable";
+import DTOEntity         from "../../dto/DTOEntity";
+import BoundingBox       from "../BoundingBox";
+import Matrix3x3         from "../matrix3x3/Matrix3x3";
+import ITransformableDTO from "./ITransformableDto";
+import TransformableSize from "./ITransformableSize";
+import ITransformable    from "./ITransformable";
 
 import { 
     createNullBB, 
@@ -12,8 +12,7 @@ import {
 
 
 
-
-export default abstract class Transformable 
+export default class Transformable 
     extends DTOEntity<ITransformableDTO>
     implements ITransformable
 {

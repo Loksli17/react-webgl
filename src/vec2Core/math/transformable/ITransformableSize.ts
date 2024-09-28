@@ -2,7 +2,7 @@ import { DTOEntity } from "../../dto/DTOEntity";
 
 
 
-export class TransformableSize extends DTOEntity<{ width: number, height: number}>
+export default class TransformableSize extends DTOEntity<{ width: number, height: number}>
 {
     
     private width: number = 0;
