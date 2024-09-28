@@ -3,7 +3,6 @@ import ITransformable from "./ITransformable";
 
 
 
-
 export namespace TransformableSystem
 {
     
@@ -38,12 +37,8 @@ export namespace TransformableSystem
     }
 
 
-    // resizeByRightTop(): void;
-
-    // resizeByRightBottom(): void;
-
-
-    // resizeByLeftSide(): void;
-
-    // resizeByTopSide(): void;
+    export function resizeByRightTop(transformable: ITransformable, ): void
+    {
+        transformable.updateWorldMatrix(null);
+    }
 }

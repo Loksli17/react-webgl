@@ -1,4 +1,4 @@
-import { DTOEntity } from "../../dto/DTOEntity";
+import DTOEntity from "../../dto/DTOEntity";
 
 
 
